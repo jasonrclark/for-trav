@@ -261,10 +261,11 @@
     
     
     // Closing active tab on clicking on toggle:
-    $('[data-toggle=tab]').click(function(){
+    $('[data-toggle=tab]').click(function(event){
         if ($(this).parent().hasClass('active')){
           $(this).parent().toggleClass('active');
 	        active = false;
+                event.stopImmediatePropagation();
         } else {
 	        tabClicked = true;
             active = this;
