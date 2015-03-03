@@ -601,6 +601,21 @@
 		var numItemsDisp = $('div.item:not(.isotope-hidden)').length;
 		$('#filter-display').append( '<span class="filter-label data-counter pull-right">All&nbsp;'+numItemsDisp+'&nbsp;Tractors</span>' );
 	}
+
+        $(document).ready(function() {
+          // Find all of our filter values
+          $("#filters").find("a[data-filter-value]").each(function(_index, item) {
+            // Find any actual items that have that class applied
+            itemsInThisFilter = $("#filter-container").find("li"+item.dataset.filterValue)
+
+            // Hide any empty ones
+            if (itemsInThisFilter.length == 0) {
+              $(item).parent().hide();
+            }
+
+          })
+          alert("yo");
+        });
 </script>
 
 </body>
