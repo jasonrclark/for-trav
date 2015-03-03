@@ -263,7 +263,7 @@
     // Closing active tab on clicking on toggle:
     $('[data-toggle=tab]').click(function(){
         if ($(this).parent().hasClass('active')){
-	        $($(this).attr("href")).toggleClass('active');
+          $(this).parent().toggleClass('active');
 	        active = false;
         } else {
 	        tabClicked = true;
