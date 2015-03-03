@@ -1,0 +1,80 @@
+/* ===========================================
+	Navigation 
+=========================================== */
+/* -------------------------------------------
+	Tabbed Filtering
+------------------------------------------- */
+.filtering { padding-top: 20px; position: relative; }
+	.filtering label { margin-bottom: 0; font-weight: 400; }
+	
+	.btn-default.active { background-color: #337ab7; border-color: #337ab7; box-shadow: none; color: #fff; }
+	.btn-default.active:hover { background-color: #337ab7; border-color: #337ab7; }
+	.btn-default.active.clone { background-color: #fff; border-color: #ccc; box-shadow: none; color: #333; margin-right: 10px; margin-bottom: 10px; }
+	.btn-default.active.clone span { color: #ccc; }
+
+.tab-pane { padding: 20px 20px 20px 10px; }
+	.tab-pane h4 { padding-left: 10px; }
+
+.filter-display-container { padding: 20px 10px; }
+
+.nav-pills > li { margin-left: 10px; margin-top: 10px; }
+.nav-pills > li+li { margin-left: 10px; }
+
+.nav > li > a { padding: 5px 10px; }
+
+.data-counter { font-size: 12px; padding-top: 7px; padding-right: 10px; }
+
+.ad-content { padding-top: 10px; }
+#filter-container { list-style-type: none; padding: 0; }
+.isotope { position: relative; overflow: hidden; height: 100%; width: 100%; }
+.isotope-item { width: 33.33%; margin-bottom: 10px; min-height: 150px;}
+.ad { background: #eee; padding: 20px; }
+.isotope-item h2 { margin-top:0; }
+
+
+	#filter-container {
+		margin: 0 auto;
+	}
+	#filters .item {
+	  margin: 10px;
+	  float: left;
+	}
+	
+	/* Start: Recommended Isotope styles */
+	/**** Isotope Filtering ****/
+	.isotope-item {
+	  z-index: 2;
+	}
+	.isotope-hidden.isotope-item {
+	  pointer-events: none;
+	  z-index: 1;
+	}
+	/**** Isotope CSS3 transitions ****/
+	.isotope,
+	.isotope .isotope-item {
+	  -webkit-transition-duration: 0.1s;
+	     -moz-transition-duration: 0.1s;
+	       -o-transition-duration: 0.1s;
+	          transition-duration: 0.1s;
+	}
+	.isotope {
+	  -webkit-transition-property: height, width;
+	     -moz-transition-property: height, width;
+	       -o-transition-property: height, width;
+	          transition-property: height, width;
+	}
+	.isotope .isotope-item {
+	  -webkit-transition-property: -webkit-transform, opacity;
+	     -moz-transition-property:    -moz-transform, opacity;
+	       -o-transition-property:         top, left, opacity;
+	          transition-property:         transform, opacity;
+	}
+	/**** disabling Isotope CSS3 transitions ****/
+	.isotope.no-transition,
+	.isotope.no-transition .isotope-item,
+	.isotope .isotope-item.no-transition {
+	  -webkit-transition-duration: 0s;
+	     -moz-transition-duration: 0s;
+	       -o-transition-duration: 0s;
+	          transition-duration: 0s;
+	}
