@@ -4,620 +4,184 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>
-			Tractors  |  Marketplace		</title>
-		
-		
+			Restaurants  |  Marketplace		</title>
+
+
 <meta name="msapplication-TileColor" content="#008d4c">
-<meta name="msapplication-TileImage" content="/assets/img/icons/favicon-144.png">
-<link rel="shortcut icon" href="/assets/img/icons/favicon.ico" type="image/x-icon">
-<link rel="icon" href="/assets/img/icons/favicon-32.png" sizes="32x32">
-<link rel="apple-touch-icon-precomposed" href="/assets/img/icons/favicon-152.png">
-<link rel="apple-touch-icon-precomposed" sizes="152x152" href="/assets/img/icons/favicon-152.png">
-<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/assets/img/icons/favicon-144.png">
-<link rel="apple-touch-icon-precomposed" sizes="120x120" href="/assets/img/icons/favicon-120.png">
-<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/assets/img/icons/favicon-114.png">
-<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/assets/img/icons/favicon-72.png">
-<link rel="apple-touch-icon-precomposed" href="/assets/img/icons/favicon-57.png">		
-<link rel="stylesheet" href="/style.css" />
-<!--<link rel="stylesheet" href="/css/foundation.css" />-->
-<link rel="stylesheet" href="/css/bootstrap.min.css" />
-<link rel="stylesheet" href="/css/app.css" />		
+<link rel="stylesheet" href="style.css" />
+<!--<link rel="stylesheet" href="css/foundation.css" />-->
+<link rel="stylesheet" href="css/bootstrap.min.css" />
+<link rel="stylesheet" href="css/restaurants.css" />
 		<meta name='robots' content='noindex,follow' />
-	
+
 	</head>
-	<body class="page page-id-57 page-template page-template-page-tractors page-template-page-tractors-php">
-	<div class="container">
-		<div id="filters" class="row filtering">
-			
-			<div class="col-lg-12 tabbable">
-				
-				<div id="options-wrap">
-				<div id="options">
+	<body class="page page-id-90 page-template page-template-page-restaurants page-template-page-restaurants-php">
+<div class="container">
+<div class="row">
+<div class="col-sm-12">
+
+	<div id="filters" class="row filtering">
+
+		<div id="toggle"><a class="btn btn-default btn-sm" href="#">Toggle Layout</a></div>
+
+		<div id="options-wrap">
+			<div id="options">
+
 				<ul class="nav nav-tabs">
-					<li class="manufacturer manufacturer-nav"><a href="#manufacturer" data-toggle="tab">Manufacturer  <span></span></a></li>
-				    <li class="drivetype drivetype-nav"><a href="#drivetype" data-toggle="tab">Drive Type  <span></span></a></li>
-				    <li class="horsepower horsepower-nav"><a href="#horsepower" data-toggle="tab">Horsepower  <span></span></a></li>
-				    <li class="size size-nav"><a href="#duty" data-toggle="tab">Duty  <span></span></a></li>
-				    <li class="price price-nav"><a href="#price" data-toggle="tab">Price  <span></span></a></li>
+					<li class="active cuisine"><a href="#cuisines" data-toggle="tab">Cuisine</a></li>
+					<li class="types"><a href="#types" data-toggle="tab">Types</a></li>
+					<li class="deliver"><a href="#deliver" data-toggle="tab">Food Delivery</a></li>
+					<li class="meals"><a href="#meals" data-toggle="tab">Meals</a></li>
+					<li class="day"><a href="#day" data-toggle="tab">Day</a></li>
+					<li class="price"><a href="#price" data-toggle="tab">Price</a></li>
+					<li class="editors"><a href="#editors" data-toggle="tab">Editor's Picks</a></li>
 				</ul>
-				
+
 				<div class="tab-content">
-					<div class="option-combo manufacturer tab-pane" id="manufacturer">
-						<h4>Manufacturer</h4>
-						<ul class="nav nav-pills filter option-set" data-filter-group="manufacturer">
-							<li><a class="btn btn-default btn-sm manufacturer agco" id="agco" data-filter-value=".agco">AGCO</a></li>
-							<li><a class="btn btn-default btn-sm manufacturer allischalmers" id="allischalmers" data-filter-value=".allischalmers">Allis-Chalmers</a></li>
-							<li><a class="btn btn-default btn-sm manufacturer case" id="case" data-filter-value=".case">Case</a></li>
-							<li><a class="btn btn-default btn-sm manufacturer caseih" id="caseih" data-filter-value=".caseih">Case IH</a></li>
-							<li><a class="btn btn-default btn-sm manufacturer challenger" id="challenger" data-filter-value=".challenger">Challenger</a></li>
-							<li><a class="btn btn-default btn-sm manufacturer farmall" id="farmall" data-filter-value=".farmall">Farmall</a></li>
-							<li><a class="btn btn-default btn-sm manufacturer ford" id="ford" data-filter-value=".ford">Ford</a></li>
-							<li><a class="btn btn-default btn-sm manufacturer international" id="international" data-filter-value=".international">International</a></li>
-							<li><a class="btn btn-default btn-sm manufacturer johndeere" id="johndeere" data-filter-value=".johndeere">John Deere</a></li>
-							<li><a class="btn btn-default btn-sm manufacturer kubota" id="kubota" data-filter-value=".kubota">Kubota</a></li>
-							<li><a class="btn btn-default btn-sm manufacturer mahindra" id="mahindra" data-filter-value=".mahindra">Mahindra</a></li>
-							<li><a class="btn btn-default btn-sm manufacturer masseyferguson" id="masseyferguson" data-filter-value=".masseyferguson">Massey-Ferguson</a></li>
-							<li><a class="btn btn-default btn-sm manufacturer mccormick" id="mccormick" data-filter-value=".mccormick">McCormick</a></li>
-							<li><a class="btn btn-default btn-sm manufacturer newholland" id="newholland" data-filter-value=".newholland">New Holland</a></li>
-							<li><a class="btn btn-default btn-sm manufacturer valtra" id="valtra" data-filter-value=".valtra">Valtra</a></li>
-							<li><a class="btn btn-default btn-sm manufacturer versatile" id="versatile" data-filter-value=".versatile">Versatile</a></li>
-							<li><a class="btn btn-default btn-sm manufacturer white" id="white" data-filter-value=".white">White</a></li>
-							<li><a class="btn btn-default btn-sm manufacturer other" id="other" data-filter-value=".other">Other Manufacturers</a></li>
+
+					<div class="option-combo cuisine tab-pane active" id="cuisines">
+						<h4 class="filter-title">Cuisine</h4>
+						<ul class="filter option-set" data-filter-group="cuisine"></li>
+							<li><a class="btn btn-default btn-sm cuisine american" id="american" data-filter-value=".american">American</a></li>
+							<li><a class="btn btn-default btn-sm cuisine asian-fusion" id="asian-fusion" data-filter-value=".asian-fusion">Asian Fusion</a></li>
+							<li><a class="btn btn-default btn-sm cuisine bbq" id="bbq" data-filter-value=".bbq">BBQ</a></li>
+							<li><a class="btn btn-default btn-sm cuisine pub" id="pub" data-filter-value=".pub">Brewery &amp; Pub</a></li>
+							<li><a class="btn btn-default btn-sm cuisine chinese" id="chinese" data-filter-value=".chinese">Chinese</a></li>
+							<li><a class="btn btn-default btn-sm cuisine japanese" id="japanese" data-filter-value=".japanese">Japanese</a></li>
+							<li><a class="btn btn-default btn-sm cuisine korean" id="korean" data-filter-value=".korean">Korean</a></li>
+							<li><a class="btn btn-default btn-sm cuisine mexican" id="mexican" data-filter-value=".mexican">Mexican</a></li>
+							<li><a class="btn btn-default btn-sm cuisine pizza" id="pizza" data-filter-value=".pizza">Pizza</a></li>
+							<li><a class="btn btn-default btn-sm cuisine thai" id="thai" data-filter-value=".thai">Thai</a></li>
 						</ul>
 					</div>
-					<div class="option-combo drivetype tab-pane" id="drivetype">
-						<h4>Drive Type</h4>
-						<ul class="nav nav-pills filter option-set" data-filter-group="drivetype">
-							<li><a class="btn btn-default btn-sm drivetype wd2" id="wd2" data-filter-value=".wd2">2WD</a></li>
-							<li><a class="btn btn-default btn-sm drivetype wd4" id="wd4" data-filter-value=".wd4">4WD</a></li>
-							<li><a class="btn btn-default btn-sm drivetype mfwd" id="mfwd" data-filter-value=".mfwd">MFWD</a></li>
-							<li><a class="btn btn-default btn-sm drivetype track" id="track" data-filter-value=".track">Track</a></li>
+
+					<div class="option-combo types tab-pane" id="types">
+						<h4 class="filter-title">Restaurant Types</h4>
+						<ul class="filter option-set" data-filter-group="types">
+							<li><a class="btn btn-default btn-sm types fastfood" id="fastfood" data-filter-value=".fastfood">Fast Food</a></li>
+							<li><a class="btn btn-default btn-sm types fastcasual" id="fastcasual" data-filter-value=".fastcasual">Fast Casual</a></li>
+							<li><a class="btn btn-default btn-sm types casual" id="casual" data-filter-value=".casual">Casual Dining</a></li>
+							<li><a class="btn btn-default btn-sm types fine" id="fine" data-filter-value=".fine">Fine Dining</a></li>
 						</ul>
 					</div>
-					<div class="option-combo horsepower tab-pane" id="horsepower">
-						<h4>Horsepower</h4>
-						<ul class="nav nav-pills filter option-set" data-filter-group="horsepower">
-							<li><a class="btn btn-default btn-sm horsepower hp40" id="hp40" data-filter-value=".hp40">0-40hp</a></li>
-							<li><a class="btn btn-default btn-sm horsepower hp99" id="hp99" data-filter-value=".hp99">40-99hp</a></li>
-							<li><a class="btn btn-default btn-sm horsepower hp174" id="hp174" data-filter-value=".hp174">100-174hp</a></li>
-							<li><a class="btn btn-default btn-sm horsepower hp349" id="hp349" data-filter-value=".hp349">175-349hp</a></li>
-							<li><a class="btn btn-default btn-sm horsepower hp350" id="hp350" data-filter-value=".hp350">350hp+</a></li>
+
+					<div class="option-combo deliver tab-pane" id="deliver">
+						<h4 class="filter-title">Food Delivery Methods</h4>
+						<ul class="filter option-set" data-filter-group="deliver">
+							<li><a class="btn btn-default btn-sm deliver delivery" id="delivery" data-filter-value=".delivery">Delivery</a></li>
+							<li><a class="btn btn-default btn-sm deliver takeout" id="takeout" data-filter-value=".takeout">Takeout</a></li>
+							<li><a class="btn btn-default btn-sm deliver inrestaurant" id="inrestaurant" data-filter-value=".inrestaurant">In Restaurant</a></li>
 						</ul>
 					</div>
-					<div class="option-combo duty tab-pane" id="duty">
-						<h4>Duty Type</h4>
-						<ul class="nav nav-pills filter option-set" data-filter-group="duty">
-							<li><a class="btn btn-default btn-sm duty compact" id="compact" data-filter-value=".compact">Compact Tractors</a></li>
-							<li><a class="btn btn-default btn-sm duty farm" id="farm" data-filter-value=".farm">Farm Tractors</a></li>
-							<li><a class="btn btn-default btn-sm duty lawn" id="lawn" data-filter-value=".lawn">Lawn Tractors</a></li>
+
+					<div class="option-combo meals tab-pane" id="meals">
+						<h4 class="filter-title">Meals</h4>
+						<ul class="filter option-set" data-filter-group="meals">
+							<li><a class="btn btn-default btn-sm meals breakfast" id="breakfast" data-filter-value=".breakfast">Breakfast</a></li>
+							<li><a class="btn btn-default btn-sm meals lunch" id="lunch" data-filter-value=".lunch">Lunch</a></li>
+							<li><a class="btn btn-default btn-sm meals dinner" id="dinner" data-filter-value=".dinner">Dinner</a></li>
 						</ul>
 					</div>
-					<div class="option-combo price tab-pane" id="price">
-						<h4>Price</h4>
-						<ul class="nav nav-pills filter option-set" data-filter-group="price">
-							<li><a class="btn btn-default btn-sm price k50" id="k50" data-filter-value=".k50">0-$50k</a></li>
-							<li><a class="btn btn-default btn-sm price k100" id="k100" data-filter-value=".k100">$50-$100k</a></li>
-							<li><a class="btn btn-default btn-sm price k200" id="k200" data-filter-value=".k200">$100-$200k</a></li>
-							<li><a class="btn btn-default btn-sm price k300" id="k300" data-filter-value=".k300">$200-$300k</a></li>
-							<li><a class="btn btn-default btn-sm price k300plus" id="k300plus" data-filter-value=".k300plus">$300k+</a></li>
+
+					<div class="option-combo day tab-pane" id="day">
+						<h4 class="filter-title">Day Options</h4>
+						<ul class="filter option-set" data-filter-group="day">
+							<li><a class="btn btn-default btn-sm day monday" id="monday" data-filter-value=".monday">Monday</a></li>
+							<li><a class="btn btn-default btn-sm day tuesday" id="tuesday" data-filter-value=".tuesday">Tuesday</a></li>
+							<li><a class="btn btn-default btn-sm day wednesday" id="wednesday" data-filter-value=".wednesday">Wednesday</a></li>
+							<li><a class="btn btn-default btn-sm day thursday" id="thursday" data-filter-value=".thursday">Thursday</a></li>
+							<li><a class="btn btn-default btn-sm day friday" id="friday" data-filter-value=".friday">Friday</a></li>
+							<li><a class="btn btn-default btn-sm day saturday" id="saturday" data-filter-value=".saturday">Saturday</a></li>
+							<li><a class="btn btn-default btn-sm day sunday" id="sunday" data-filter-value=".sunday">Sunday</a></li>
 						</ul>
 					</div>
-				</div>
-				
-			</div>
-			</div>
-				
-			</div><!-- .tabbable -->
-			
-		</div><!-- .filtering -->
-	
+
+					<div class="option-combo day tab-pane" id="price">
+						<h4 class="filter-title">Price</h4>
+						<ul class="filter option-set" data-filter-group="price">
+							<li><a class="btn btn-default btn-sm price cheapeats" id="cheapeats" data-filter-value=".cheapeats">Cheap Eats</a></li>
+							<li><a class="btn btn-default btn-sm price moderateprice" id="moderateprice" data-filter-value=".moderateprice">Moderately Priced</a></li>
+							<li><a class="btn btn-default btn-sm price higherprice" id="higherprice" data-filter-value=".higherprice">Higher Priced</a></li>
+							<li><a class="btn btn-default btn-sm price finediningprice" id="finediningprice" data-filter-value=".finediningprice">Fine Dining</a></li>
+						</ul>
+					</div>
+
+					<div class="option-combo editors tab-pane" id="editors">
+						<h4 class="filter-title">Editor's Picks</h4>
+						<ul class="filter option-set" data-filter-group="editors">
+							<li><a class="btn btn-default btn-sm editors recommended" id="recommended" data-filter-value=".recommended">Highly Recommended</a></li>
+						</ul>
+					</div>
+
+				</div><!-- .tab-content -->
+
+			</div><!-- #options -->
+		</div><!-- #options-wrap -->
+
+
 		<div class="container row filter-display-container">
-				<p id="filter-display"></p>
-		  		<p id="filter-counter"></p>
-				<!--<ul class="nav nav-pills">
-					<li><a href="#" class="btn btn-sm btn-default">John Deere <span class="glyphicon glyphicon-remove"></span></a></li>
-					<li><a href="#" class="btn btn-sm btn-default">2WD <span class="glyphicon glyphicon-remove"></span></a></li>
-					<li><a href="#" class="btn btn-sm btn-default">Compact Tractor <span class="glyphicon glyphicon-remove"></span></a></li>
-					<li><a class="btn btn-danger btn-sm" href="#">Clear All</a></li>
-				</ul>-->
-		</div>
-		
-		<div class="row ad-content">
-			<div class="col-lg-12">
-				<ul id="filter-container" class="isotope">
-					<li class="ad item masseyferguson wd4 hp99 compact-tractor k100"><a href="#">
-						
-							<h2>2012 Massey-Ferguson 5445</h2>
-							<p>MF 5445 4WD tractor with cab.</p>
-					</a></li>
-					
-					<li class="ad item newholland wd4 hp99 compact-tractor k50"><a href="#">
-						
-							<h2>2009 Ford New Holland 4030</h2>
-							<p>Ford New Holland T4030 4WD Tractor.</p>
-					</a></li>
-					<li class="ad item case wd4 hp99 compact-tractor k50"><a href="#">
-						
-							<h2>1998 Case IH MX90C</h2>
-							<p>Ford New Holland T4030 4WD Tractor.</p>
-					</a></li>
-					<li class="ad item valtra wd4 hp99 compact-tractor k50"><a href="#">
-						
-							<h2>2003 Valtra 900</h2>
-							<p>Valtra 900 4WD Tractor with cab.</p>
-					</a></li>
-					<li class="ad item newholland wd4 hp99 compact-tractor k50"><a href="#">
-						
-							<h2>2004 New Holland TN70A</h2>
-							<p>Ford-New Holland TN70A.</p>
-					</a></li>
-					<li class="ad item kubota wd4 hp99 compact-tractor k50"><a href="#">
-						
-							<h2>2004 Kubota MX5000</h2>
-							<p>Kubota MX5000 4WD Tractor rops.</p>
-					</a></li>
-					<li class="ad item johndeere wd2 hp99 compact-tractor k50"><a href="#">
-						
-							<h2>1978 John Deere 2840</h2>
-							<p>JD 2840 2WD Tractor with 148 loader.</p>
-					</a></li>
-					<li class="ad item masseyferguson wd4 hp350plus farm-tractor k300"><a href="#">
-						
-							<h2>2013 Massey-Ferguson 8690</h2>
-							<p>MF 8690 4WD Tractor with cab.</p>
-					</a></li>
-					<li class="ad item challenger track hp349 farm-tractor k300"><a href="#">
-						
-							<h2>2013 Challenger MT755C</h2>
-							<p>CH MT755C-UW16 Track Tractor DLX.</p>
-					</a></li>
-					<li class="ad item johndeere track hp349 farm-tractor k300"><a href="#">
-						
-							<h2>2010 John Deere 8345RT</h2>
-							<p>JD 8345RT Track Tractor with track.</p>
-					</a></li>
-					<li class="ad item case mfwd hp349 farm-tractor k200"><a href="#">
-						
-							<h2>2011 Case IH Magnum 260</h2>
-							<p>Magnum 260 Wheel Tractor.</p>
-					</a></li>
-					<li class="ad item newholland wd4 hp349 farm-tractor k200"><a href="#">
-						
-							<h2>2011 New Holland T7260</h2>
-							<p>Ford New-Holland T7260 Tractor.</p>
-					</a></li>
-					<li class="ad item johndeere mfwd hp174 farm-tractor k100"><a href="#">
-						
-							<h2>2009 John Deere 8300</h2>
-							<p>John Deere 8300 MFWD 5400 hours.</p>
-					</a></li>
-					<li class="ad item johndeere mfwd hp349 farm-tractor k100"><a href="#">
-						
-							<h2>2003 John Deere 8420</h2>
-							<p>2003 John Deere 8420 MFWD, PS.</p>
-					</a></li>
-					<li class="ad item case wd4 hp40 lawn-tractor k50"><a href="#">
-						
-							<h2>2006 Case IH DX35</h2>
-							<p>CASE-IH DX35 4WD Tractor with Rops.</p>
-					</a></li>
-					<li class="ad item johndeere wd2 hp40 lawn-tractor k50"><a href="#">
-						
-							<h2>1986 John Deere 310</h2>
-							<p>JD 310C Tractor, Loader, Backhoe.</p>
-					</a></li>
-					<li class="ad item kubota wd4 hp40 lawn-tractor k50"><a href="#">
-						
-							<h2>2006 Kubota L3400HST</h2>
-							<p>KUBOTA L3400HST 4WD Tractor.</p>
-					</a></li>
-					<li class="ad item masseyferguson wd4 hp40 lawn-tractor k50"><a href="#">
-						
-							<h2>2001 Massey-Ferguson 1240</h2>
-							<p>MF 1240 4WD Tractor with Rops.</p>
-					</a></li>
-					<li class="ad item masseyferguson wd2 hp40 lawn-tractor k50"><a href="#">
-						
-							<h2>1960 Massey-Ferguson 50</h2>
-							<p>MF 50 Tractor with blade.</p>
-					</a></li>
-					<li class="ad item masseyferguson wd2 hp40 lawn-tractor k50"><a href="#">
-						
-							<h2>1951 Massey-Ferguson TO30</h2>
-							<p>MF TO30 2WD Tractor, bad engine.</p>
-					</a></li>
-				</ul>
-			</div>
-		</div>
-	
-	</div><!-- .container -->
-	
-
-<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js'></script>
-<script type='text/javascript' src='/js/bootstrap.min.js'></script>
-<script type='text/javascript' src='/js/bootstrap-tabdrop.js'></script>
-<script type='text/javascript' src='/js/jquery.isotope.min.js'></script>
-
-<!-- Add Tabdrop -->
-<script>
-	$('.nav-tabs').tabdrop({text: 'More options'})
-</script>
+			<p id="filter-display"></p>
+			<p id="filter-counter"></p>
+		</div><!-- .container .row .filter-display-container -->
 
 
-<!-- Add tab functionality like closing on click and esc -->
-<script>
-	$(function() {
-    
-    var active = $('a[data-toggle="tab"]').parents('.active').length;
-    var tabClicked = false;
-    
-    // Closes current active tab (toggle and pane):
-    var close = function() {
-        $('a[data-toggle="tab"]').parent().removeClass('active');
-        $('.tab-pane.active').removeClass('active');
-        active = false;
-    }
-    
-    
-    
-    // Closing active tab on clicking on toggle:
-    $('[data-toggle=tab]').click(function(event){
-        if ($(this).parent().hasClass('active')){
-          $(this).parent().toggleClass('active');
-	        active = false;
-                event.stopImmediatePropagation();
-        } else {
-	        tabClicked = true;
-            active = this;
-        }
-        
-    });
-    
-    /* Closing active tab on clicking outside tab context (toggle and pane):
-    $(document).on('click.bs.tab.data-api', function(event) {
-        if(active && !tabClicked && !$(event.target).closest('.tab-pane.active').length) {
-            close();
-        }
-        
-        tabClicked = false;
-    });*/
-    
-    
-    // Closing active tab on ESC key release:
-    $(document).keyup(function(e){
-        if(active && e.keyCode === 27) { // ESC
-            close();
-        }
-    });
-});
-</script>
+		<div id="filter-container" class="isotope">
+			<ul class="filtered-items">
+				<li><a href="#">
+				<img class="item pub casual takeout inrestaurant lunch dinner monday tuesday moderateprice" src="http://mp.eomedia.webfactional.com/wp-content/themes/onlyag/assets/img/restaurants/calapooia-brewing.jpg"></a></li>
+				<li><a href="#">
+				<img class="item thai casual delivery takeout inrestaurant lunch dinner monday tuesday moderateprice" src="http://mp.eomedia.webfactional.com/wp-content/themes/onlyag/assets/img/restaurants/house-of-noodle.jpg"></a></li>
+				<li><a href="#">
+				<img class="item mexican casual takeout inrestaurant lunch dinner monday tuesday moderateprice" src="http://mp.eomedia.webfactional.com/wp-content/themes/onlyag/assets/img/restaurants/los-dos-amigos.jpg"></a></li>
+				<li><a href="#">
+				<img class="item japanese casual takeout inrestaurant lunch dinner monday tuesday higherprice recommended" src="http://mp.eomedia.webfactional.com/wp-content/themes/onlyag/assets/img/restaurants/momiji.jpg"></a></li>
+				<li><a href="#">
+				<img class="item bbq fastcasual takeout lunch dinner wednesday thursday higherprice" src="http://mp.eomedia.webfactional.com/wp-content/themes/onlyag/assets/img/restaurants/oregon-bbq-company.jpg"></a></li>
+				<li><a href="#">
+				<img class="item pizza fastfood fastcasual delivery takeout lunch dinner wednesday thursday cheapeats" src="http://mp.eomedia.webfactional.com/wp-content/themes/onlyag/assets/img/restaurants/pizza-now.jpg"></a></li>
+				<li><a href="#">
+				<img class="item mexican fastfood fastcasual takeout inrestaurant breakfast lunch dinner wednesday thursday cheapeats recommended" src="http://mp.eomedia.webfactional.com/wp-content/themes/onlyag/assets/img/restaurants/rigobertos.jpg"></a></li>
+				<li><a href="#">
+				<img class="item american casual takeout inrestaurant breakfast lunch dinner wednesday thursday moderateprice" src="http://mp.eomedia.webfactional.com/wp-content/themes/onlyag/assets/img/restaurants/rogers.jpg"></a></li>
+				<li><a href="#">
+				<img class="item asian-fusion casual takeout inrestaurant lunch dinner friday saturday moderateprice" src="http://mp.eomedia.webfactional.com/wp-content/themes/onlyag/assets/img/restaurants/sam-city.jpg"></a></li>
+				<li><a href="#">
+				<img class="item asian-fusion korean casual takeout inrestaurant lunch dinner friday saturday moderateprice" src="http://mp.eomedia.webfactional.com/wp-content/themes/onlyag/assets/img/restaurants/toki-teriyaki.jpg"></a></li>
+				<li><a href="#">
+				<img class="item american casual takeout inrestaurant lunch dinner friday saturday moderateprice" src="http://mp.eomedia.webfactional.com/wp-content/themes/onlyag/assets/img/restaurants/applebees.jpg"></a></li>
+				<li><a href="#">
+				<img class="item american fine inrestaurant lunch dinner friday saturday finediningprice recommended" src="http://mp.eomedia.webfactional.com/wp-content/themes/onlyag/assets/img/restaurants/vault-244.jpg"></a></li>
+				<li><a href="#">
+				<img class="item american casual takeout inrestaurant lunch friday saturday moderateprice" src="http://mp.eomedia.webfactional.com/wp-content/themes/onlyag/assets/img/restaurants/pepper-tree.jpg"></a></li>
+				<li><a href="#">
+				<img class="item asian-fusion japanese casual takeout inrestaurant lunch dinner friday saturday moderateprice" src="http://mp.eomedia.webfactional.com/wp-content/themes/onlyag/assets/img/restaurants/love-love-teriyaki.jpg"></a></li>
+				<li><a href="#">
+				<img class="item mexican fastfood fastcasual takeout inrestaurant lunch dinner monday cheapeats" src="http://mp.eomedia.webfactional.com/wp-content/themes/onlyag/assets/img/restaurants/muchas-gracias.jpg"></a></li>
+				<li><a href="#">
+				<img class="item pizza casual delivery takeout inrestaurant lunch dinner tuesday moderateprice" src="http://mp.eomedia.webfactional.com/wp-content/themes/onlyag/assets/img/restaurants/pizza-hut.jpg"></a></li>
+				<li><a href="#">
+				<img class="item pizza fastfood fastcasual delivery takeout inrestaurant lunch dinner wednesday cheapeats" src="http://mp.eomedia.webfactional.com/wp-content/themes/onlyag/assets/img/restaurants/dominos.jpg"></a></li>
+				<li><a href="#">
+				<img class="item asian-fusion thai casual takeout inrestaurant lunch dinner thursday higherprice" src="http://mp.eomedia.webfactional.com/wp-content/themes/onlyag/assets/img/restaurants/thai-house-roidaw.jpg"></a></li>
+				<li><a href="#">
+				<img class="item asian-fusion thai casual takeout inrestaurant lunch dinner friday moderateprice" src="http://mp.eomedia.webfactional.com/wp-content/themes/onlyag/assets/img/restaurants/tup-tim.jpg"></a></li>
+				<li><a href="#">
+				<img class="item pizza fastfood fastcasual delivery takeout lunch dinner saturday cheapeats" src="http://mp.eomedia.webfactional.com/wp-content/themes/onlyag/assets/img/restaurants/little-caesars.jpg"></a></li>
+			</ul>
 
-<!-- Add filtering options -->
-<script>
-	
-	var $container;
-	var filters = {};
-	$(function(){
-	  	$container = $('#filter-container');
-		var $filterDisplay = $('#filter-display');
-		$container.imagesLoaded( function(){
-			$container.isotope({
-		    	itemSelector : '.item',
-		    	sortBy : 'random',
-		    	layoutMode : 'cellsByRow'
-			});
-		});
-		var numItemsDisp = $('div.item:not(.isotope-hidden)').length;
-		$filterDisplay.append( '<span class="filter-label data-counter pull-right">All&nbsp;'+numItemsDisp+'&nbsp;Tractors</span>' );
-		var group = '';
-	  	// filter on click
-	    $('.filter a').click(function(){
-	    	// we can gtfo directly if filter disabled
-	    	if ($(this).hasClass('disabled') ){
-	    		return false;
-	    	}
-	    	var $this = $(this);
-	    	var $optionSet = $(this).parents('.option-set');
-			group = $optionSet.attr('data-filter-group');
-			// store filter value in object
-			var filterGroup = filters[ group ];
-  			if ( !filterGroup ) {
-				filterGroup = filters[ group ] = [];
-			}
-		    var isAll = $this.hasClass('all');
-			// reset filter group
-			if ( isAll ) {
-				Array.prototype.remove = function(from, to) {
-					var rest = this.slice((to || from) + 1 || this.length);
-					this.length = from < 0 ? this.length + from : from;
-					return this.push.apply(this, rest);
-				};
-				filters[ group ].remove(0,-1)
-			}
-	  		var index = $.inArray($this.attr('data-filter-value'), filterGroup );
-	  		if ( !isAll && index === -1 ) {
-		      	// push filter to group
-	      		filters[ group ].push($this.attr('data-filter-value') );
-		    }
-		    else if ( !isAll ) {
-			    // remove filter from group
-			    filters[ group ].splice( index, 1 );
-			}
-			// class toggling
-			if ($this.hasClass('active') ) {
-				$this.removeClass('active');
-			}
-			else {
-				$this.addClass('active');
-			}
-			// let's do some filtering :>
-			var comboFilter = getComboFilter( filters );
-		    $container.isotope({ filter: comboFilter });
-		    // gotta check and set those disabled filters:
-			var $that = $(this);
-			// manufacturer
-			$('a.manufacturer:not(.clone)').each(function() {
-				var $this = $(this);
-				var getVal = $this.attr('data-filter-value');
-				var numItems = $('div'+getVal+':not(.isotope-hidden)').length;
-				if(!$(this).hasClass('active') && !$that.hasClass('manufacturer') ){
-					if(numItems == 0){
-						$this.addClass('disabled');
-					}
-					else {
-						$this.removeClass('disabled');
-					}
-				}
-				else if( $this.hasClass('active') && $this.hasClass('disabled') ){
-					$this.removeClass('disabled');
-				}
-				else if(!$(this).hasClass('active') ) {
-					if(numItems > 0){
-						$this.removeClass('disabled');
-					}
-				}
-			});
-			// drivetype
-			$('a.drivetype:not(.clone)').each(function() {
-				var $this = $(this);
-				var getVal = $this.attr('data-filter-value');
-				var numItems = $('div'+getVal+':not(.isotope-hidden)').length;
-				if(!$(this).hasClass('active') && !$that.hasClass('drivetype') ){
-					if(numItems == 0){
-						$this.addClass('disabled');
-					}
-					else {
-						$this.removeClass('disabled');
-					}
-				}
-				else if( $this.hasClass('active') && $this.hasClass('disabled') ){
-					$this.removeClass('disabled');
-				}
-				else if(!$(this).hasClass('active') ) {
-					if(numItems > 0){
-						$this.removeClass('disabled');
-					}
-				}
-			});
-			// horsepower
-			$('a.horsepower:not(.clone)').each(function() {
-				var $this = $(this);
-				var getVal = $this.attr('data-filter-value');
-				var numItems = $('div'+getVal+':not(.isotope-hidden)').length;
-				if(!$(this).hasClass('active') && !$that.hasClass('horsepower') ){
-					if(numItems == 0){
-						$this.addClass('disabled');
-					}
-					else {
-						$this.removeClass('disabled');
-					}
-				}
-				else if( $this.hasClass('active') && $this.hasClass('disabled') ){
-					$this.removeClass('disabled');
-				}
-				else if(!$(this).hasClass('active') ) {
-					if(numItems > 0){
-						$this.removeClass('disabled');
-					}
-				}
-			});
-			// size
-			$('a.size:not(.clone)').each(function() {
-				var $this = $(this);
-				var getVal = $this.attr('data-filter-value');
-				var numItems = $('div'+getVal+':not(.isotope-hidden)').length;
-				if(!$(this).hasClass('active') && !$that.hasClass('size') ){
-					if(numItems == 0){
-						$this.addClass('disabled');
-					}
-					else {
-						$this.removeClass('disabled');
-					}
-				}
-				else if( $this.hasClass('active') && $this.hasClass('disabled') ){
-					$this.removeClass('disabled');
-				}
-				else if(!$(this).hasClass('active') ) {
-					if(numItems > 0){
-						$this.removeClass('disabled');
-					}
-				}
-			});
-			// price
-			$('a.price:not(.clone)').each(function() {
-				var $this = $(this);
-				var getVal = $this.attr('data-filter-value');
-				var numItems = $('div'+getVal+':not(.isotope-hidden)').length;
-				if(!$(this).hasClass('active') && !$that.hasClass('price') ){
-					if(numItems == 0){
-						$this.addClass('disabled');
-					}
-					else {
-						$this.removeClass('disabled');
-					}
-				}
-				else if( $this.hasClass('active') && $this.hasClass('disabled') ){
-					$this.removeClass('disabled');
-				}
-				else if(!$(this).hasClass('active') ) {
-					if(numItems > 0){
-						$this.removeClass('disabled');
-					}
-				}
-			});
-			// update filter display
-		    var arrLbl = [];
-		    arrLbl = comboFilter.split('.');
-		    // before iterating we empty previous display vals
-		    $filterDisplay.empty();
-			// clone method for filter display
-			var clone = 'clone';
-			var cloneId = 0; // because cloning an id attr just wrong :>
-			$('a.active').each(function() {
-				cloneId++;
-				$(this).clone().appendTo($filterDisplay).attr('id',clone+cloneId).addClass('clone');
-			});
-			$('a.active.clone').each(function() {
-				$(this).append('  <span class="glyphicon glyphicon-remove"></span>');
-			});
-			$('a.clone').on('click', function() {
-				var that = $(this);
-				var parent = that.attr('data-filter-value');
-				$('ul.filter').find(parent).each(function() {
-					$(this).trigger('click');
-				});
-			});
-			// resolves any outstanding issues with disableds
-			// TODO: Find a way around using indexOf this way. Lots of unneccesary overhead.
-			if ( comboFilter.indexOf('drivetype') == -1 
-				&& comboFilter.indexOf('horsepower') == -1 
-				&& comboFilter.indexOf('size') == -1 
-				&& comboFilter.indexOf('subject') == -1 
-				&& comboFilter.indexOf('price') == -1 
-				&& comboFilter.indexOf('sale') == -1 
-				&& comboFilter.indexOf('manufacturer') > 0 ){
-	   				$('a.manufacturer:not(.clone)').removeClass('disabled');
-	   		}
-			if ( comboFilter.indexOf('manufacturer') == -1 
-				&& comboFilter.indexOf('horsepower') == -1 
-				&& comboFilter.indexOf('size') == -1 
-				&& comboFilter.indexOf('subject') == -1 
-				&& comboFilter.indexOf('price') == -1 
-				&& comboFilter.indexOf('sale') == -1 
-				&& comboFilter.indexOf('drivetype') > 0 ){
-	   				$('a.drivetype:not(.clone)').removeClass('disabled');
-	   		}
-			if ( comboFilter.indexOf('manufacturer') == -1 
-				&& comboFilter.indexOf('drivetype') == -1 
-				&& comboFilter.indexOf('size') == -1 
-				&& comboFilter.indexOf('subject') == -1 
-				&& comboFilter.indexOf('price') == -1 
-				&& comboFilter.indexOf('sale') == -1 
-				&& comboFilter.indexOf('horsepower') > 0 ){
-	   				$('a.horsepower:not(.clone)').removeClass('disabled');
-	   		}
-			if ( comboFilter.indexOf('manufacturer') == -1 
-				&& comboFilter.indexOf('drivetype') == -1 
-				&& comboFilter.indexOf('horsepower') == -1 
-				&& comboFilter.indexOf('subject') == -1 
-				&& comboFilter.indexOf('price') == -1 
-				&& comboFilter.indexOf('sale') == -1 
-				&& comboFilter.indexOf('size') > 0 ){
-	   				$('a.size:not(.clone)').removeClass('disabled');
-	   		}
-	   		if ( comboFilter.indexOf('manufacturer') == -1 
-				&& comboFilter.indexOf('drivetype') == -1 
-				&& comboFilter.indexOf('size') == -1 
-				&& comboFilter.indexOf('horsepower') == -1 
-				&& comboFilter.indexOf('subject') == -1 
-				&& comboFilter.indexOf('sale') == -1 
-				&& comboFilter.indexOf('price') > 0 ){
-	   				$('a.price:not(.clone)').removeClass('disabled');
-	   		}
-			// filter display count
-			var numItemsHidden = $('div.item.isotope-hidden').length;
-			var numItemsDisp = $('div.item:not(.isotope-hidden)').length;
-			var numItemsVisible = $('div.item:not(.isotope-hidden)').length;
-			var activeCheck = $('a.active').size();
-			if(numItemsHidden != 0 && numItemsDisp != 1) {
-				// clear filter
-				$filterDisplay.append( '<a onclick="clearAll();" id="reset-filters" class="btn btn-danger btn-sm pull-right filter-btn">Clear All</a>' );
-				$filterDisplay.append( '<span class="filter-label data-counter pull-right">'+numItemsDisp+'&nbsp;Tractors&nbsp;&nbsp;</span>' );
-			}
-			else if (numItemsHidden != 0 && numItemsDisp === 1) {
-				$filterDisplay.append( '<a onclick="clearAll();" id="reset-filters" class="btn btn-danger btn-sm pull-right filter-btn">Clear All</a>' );
-				$filterDisplay.append( '<span class="filter-label data-counter pull-right">'+numItemsDisp+' Tractors&nbsp;&nbsp;</span>' );
-			}
-			else if (numItemsHidden === 0 && activeCheck > 0) {
-				$filterDisplay.append( '<a onclick="clearAll();" id="reset-filters" class="btn btn-danger btn-sm pull-right filter-btn">Clear All</a>' );
-				$filterDisplay.append( '<span class="filter-label data-counter pull-right">All Tractors ('+numItemsDisp+')&nbsp;&nbsp;</span>' );
-			}
-			else if (numItemsHidden === 0 && activeCheck === 0) {
-				$filterDisplay.append( '<span class="filter-label data-counter pull-right">All&nbsp;'+numItemsDisp+'&nbsp;Tractors</span>' );
-			}
-			else{ // strictly fall-back - this should never get triggered 
-				$filterDisplay.append( '<a onclick="clearAll();" id="reset-filters" class="btn btn-danger btn-sm pull-right filter-btn">Clear All</a>' );
-				$filterDisplay.append( '<span class="filter-label data-counter pull-right">'+numItemsDisp+'&nbsp;Tractors&nbsp;&nbsp;</span>' );
-				//console.log("else was triggered"); // <-- uncomment for debugging
-			}
-	   });
-	});
-	function getComboFilter( filters ) {
-		var i = 0;
-		var comboFilters = [];
-		var message = [];
-		for ( var prop in filters ) {
-			message.push( filters[ prop ].join(' ') );
-	    	var filterGroup = filters[ prop ];
-	    	// skip to next filter group if it doesn't have any values
-	    	if ( !filterGroup.length ) {
-	      		continue;
-	    	}
-		    if ( i === 0 ) {
-		    	// copy to new array
-		      	comboFilters = filterGroup.slice(0);
-		    } 
-		    else {
-				var filterSelectors = [];
-		      	// copy to fresh array
-				var groupCombo = comboFilters.slice(0); // [ A, B ]
-				// merge filter Groups
-				for (var k=0, len3 = filterGroup.length; k < len3; k++) {
-					for (var j=0, len2 = groupCombo.length; j < len2; j++) {
-						filterSelectors.push( groupCombo[j] + filterGroup[k] ); // [ 1, 2 ]
-					}
-				}
-				// apply filter selectors to combo filters for next group
-				comboFilters = filterSelectors;
-		    }
-			i++;
-		}
-		comboFilters.sort();
-	  	var comboFilter = comboFilters.join(', ');
-		return comboFilter;
-	}
-	function clearAll(){
-		$('a.active').trigger('click');
-		$('#filter-display').empty();
-		var numItemsDisp = $('div.item:not(.isotope-hidden)').length;
-		$('#filter-display').append( '<span class="filter-label data-counter pull-right">All&nbsp;'+numItemsDisp+'&nbsp;Tractors</span>' );
-	}
+		</div><!-- #filter-container .isotope -->
 
-        $(document).ready(function() {
-          // Find all of our filter values
-          $("#filters").find("a[data-filter-value]").each(function(_index, item) {
-            // Find any actual items that have that class applied
-            itemsInThisFilter = $("#filter-container").find("li"+item.dataset.filterValue)
+	</div><!-- #filters .row .filtering -->
 
-            // Hide any empty ones
-            if (itemsInThisFilter.length == 0) {
-              $(item).parent().hide();
-            }
+</div><!-- .col-sm-12 -->
+</div><!-- .row -->
+</div><!-- .container -->
 
-          })
-          alert("yo");
-        });
-</script>
+
+<script type='text/javascript' src='http://everyonelovessharing.com/misc/isotopedemo/static/js/jquery-1.10.2.min.js'></script>
+<script type='text/javascript' src='js/bootstrap.min.js'></script>
+<script type='text/javascript' src='js/jquery.isotope.min.js'></script>
+<script type='text/javascript' src='js/isotope-filter.js'></script>
 
 </body>
 </html>

@@ -1,0 +1,153 @@
+/* ===========================================
+	Global 
+=========================================== */
+body { background: #efefef; }
+
+.container { background: #fff; }
+
+ul, menu, dir { /* Not sure why but I need this on Chrome */
+	-webkit-margin-before: 0;
+	-webkit-margin-after: 0;
+	-webkit-margin-start: 0;
+	-webkit-margin-end: 0;
+	-webkit-padding-start: 0; }
+	
+/* ===========================================
+	Toggle 
+=========================================== */
+#toggle { float: right; padding: 20px; }
+
+
+/* ===========================================
+	Filters 
+=========================================== */
+#filters { position: relative; }
+	.tab-pane { padding-top: 20px; }
+
+#options-wrap { padding: 0 20px; z-index: 999999; clear: right; }
+	
+	#options { background-color: #fff; width: 100%; }
+		
+		.option-set { list-style-type: none; margin: 0; padding: 0 20px; }
+			.option-set a:hover { cursor: hand !important; cursor: pointer !important; }	
+		.tab-content>.active { overflow: hidden; }
+			.filter-title { padding: 0 0 10px 20px; }
+			.filter li { float: left; margin: 0 10px 10px 0; }
+				.filter a { padding-right: 10px; }
+	
+					.btn-default.active { 
+						background-color: #337ab7; 
+						border-color: #337ab7; 
+						box-shadow: none; 
+						color: #fff; }
+					.btn-default.active:hover { background-color: #337ab7; border-color: #337ab7; }
+					
+					a.disabled, 
+					a.disabled:hover, 
+					a.disabled:active { color: #a9a9a9; }
+
+					
+/* ===========================================
+	Filter Display
+=========================================== */					
+.row.filter-display-container { 
+	display: block; 
+	margin: 0;
+	min-height: 45px;
+	overflow: hidden; }
+
+	#filter-display { 
+		border-top: 1px solid #efefef; 
+		margin-top: 20px; 
+		padding-left: 25px; 
+		padding-right: 25px; }
+		#filter-display a { padding: 5px 10px; }
+
+	#filters #filter-display, 
+	#filter-counter { font-size: 14px; line-height: 45px; }
+	
+		.filter-label { font-weight: 500; }
+		#reset-filters { margin-left: 10px; margin-top: 8px; }
+		#reset-filters:hover { cursor: hand !important; cursor: pointer !important; }
+	
+			.btn-default.active.clone { 
+				background-color: #fff; 
+				border-color: #ccc; 
+				box-shadow: none; 
+				color: #333; 
+				margin: 8px 10px 10px 0; }
+			.btn-default.active.clone:hover { background-color: #ac2925; color: #fff; }
+			.btn-default.active.clone:hover span { color: rgba(255,255,255,.5); }
+			.btn-default.active.clone span { color: #ccc; padding-left: 10px; padding-top: 2px; }
+					
+					
+/* ===========================================
+	Filtered Items
+=========================================== */	
+#filter-container {
+	margin: 0 auto; 
+	position: relative; 
+	overflow: hidden; 
+	height: 100%; 
+	width: 100%; }
+	
+	#filters .item {
+	  margin: 0;
+	  padding: 10px;
+	  float: left;
+	}
+	#filters img.item {
+	  display: block;
+	  max-width: 33.333%;
+	}
+	
+	#filters .quickview img.item { max-width: 100%; }
+	
+	
+	
+	
+	
+@media only screen and (max-width: 600px) {
+	#filters img.item { max-width: 100%; }
+}	
+
+	.filtered-items { list-style-type: none; }
+	
+	/* Start: Recommended Isotope styles */
+	/**** Isotope Filtering ****/
+	.isotope-item {
+	  z-index: 2;
+	}
+	.isotope-hidden.isotope-item {
+	  pointer-events: none;
+	  z-index: 1;
+	}
+	/**** Isotope CSS3 transitions ****/
+	.isotope,
+	.isotope .isotope-item {
+	  -webkit-transition-duration: 0.1s;
+	     -moz-transition-duration: 0.1s;
+	       -o-transition-duration: 0.1s;
+	          transition-duration: 0.1s;
+	}
+	.isotope {
+	  -webkit-transition-property: height, width;
+	     -moz-transition-property: height, width;
+	       -o-transition-property: height, width;
+	          transition-property: height, width;
+	}
+	.isotope .isotope-item {
+	  -webkit-transition-property: -webkit-transform, opacity;
+	     -moz-transition-property:    -moz-transform, opacity;
+	       -o-transition-property:         top, left, opacity;
+	          transition-property:         transform, opacity;
+	}
+	/**** disabling Isotope CSS3 transitions ****/
+	.isotope.no-transition,
+	.isotope.no-transition .isotope-item,
+	.isotope .isotope-item.no-transition {
+	  -webkit-transition-duration: 0s;
+	     -moz-transition-duration: 0s;
+	       -o-transition-duration: 0s;
+	          transition-duration: 0s;
+	}
